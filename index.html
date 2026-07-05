@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Search -->
+        <form class="search-form">
+
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Enter city name..."
+                required>
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+        <!-- Weather Card -->
+        <div class="weather-card">
+
+            <img
+                src=""
+                class="weather-icon"
+                alt="Weather Icon">
+
+            <h1 class="temperature">
+                --°C
+            </h1>
+
+            <h2 class="city">
+                Loading...
+            </h2>
+
+            <p class="date-time">
+                --
+            </p>
+
+            <h3 class="condition">
+                --
+            </h3>
+
+            <div class="weather-details">
+
+                <div class="detail-box">
+
+                    <h4>Humidity</h4>
+
+                    <p class="humidity">
+                        --%
+                    </p>
+
+                </div>
+
+                <div class="detail-box">
+
+                    <h4>Wind Speed</h4>
+
+                    <p class="wind">
+                        -- km/h
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>

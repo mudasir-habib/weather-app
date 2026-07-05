@@ -1,0 +1,261 @@
+/* ==========================
+   Google Font & Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================
+   Body
+========================== */
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#4facfe,#00c6fb);
+    padding:20px;
+}
+
+/* ==========================
+   Container
+========================== */
+
+.container{
+    width:100%;
+    max-width:450px;
+}
+
+/* ==========================
+   Search Form
+========================== */
+
+.search-form{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.search-input{
+    flex:1;
+    padding:14px 18px;
+    border:none;
+    outline:none;
+    border-radius:40px;
+    font-size:16px;
+}
+
+.search-form button{
+    padding:14px 22px;
+    border:none;
+    border-radius:40px;
+    background:#ffffff;
+    color:#333;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.search-form button:hover{
+    background:#222;
+    color:#fff;
+}
+
+/* ==========================
+   Weather Card
+========================== */
+
+.weather-card{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#fff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    animation:fadeIn .8s ease;
+
+}
+
+/* ==========================
+   Weather Icon
+========================== */
+
+.weather-icon{
+
+    width:110px;
+
+    height:110px;
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================
+   Temperature
+========================== */
+
+.temperature{
+
+    font-size:65px;
+
+    font-weight:700;
+
+}
+
+/* ==========================
+   City
+========================== */
+
+.city{
+
+    margin-top:10px;
+
+    font-size:32px;
+
+}
+
+/* ==========================
+   Date & Time
+========================== */
+
+.date-time{
+
+    margin-top:8px;
+
+    font-size:15px;
+
+    opacity:.9;
+
+}
+
+/* ==========================
+   Condition
+========================== */
+
+.condition{
+
+    margin-top:20px;
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   Details
+========================== */
+
+.weather-details{
+
+    margin-top:30px;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.detail-box{
+
+    flex:1;
+
+    background:rgba(255,255,255,.18);
+
+    border-radius:18px;
+
+    padding:18px;
+
+}
+
+.detail-box h4{
+
+    font-size:17px;
+
+    margin-bottom:10px;
+
+}
+
+.detail-box p{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+/* ==========================
+   Animation
+========================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media(max-width:600px){
+
+    .search-form{
+
+        flex-direction:column;
+
+    }
+
+    .search-form button{
+
+        width:100%;
+
+    }
+
+    .temperature{
+
+        font-size:55px;
+
+    }
+
+    .city{
+
+        font-size:26px;
+
+    }
+
+    .weather-details{
+
+        flex-direction:column;
+
+    }
+
+}
